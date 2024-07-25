@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins";
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* bottom: 0; */
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.list{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.list a {
+    color: #242323;
+}
+
+.btn{
+    border: none;
+    background-color: #4DFCDC;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
+.hero{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: #C690E040;
+    border-radius: 12px;
+    margin-inline: 2rem;
+    margin-block: 7rem 0;
+
+}
+
+.hero-text{
+    width: fit-content;
+    padding: 1.5rem;
+
+}
+
+.hero-img {
+    background-image: url(./images/pinky.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    width: 100%;
+
+}
+
+.hero-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.a{
+    background-color: #4DFCDC;
+    width: 300px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 900;
+    transform: skewY(-2deg);
+ 
+}
+
+.b , .c, .d{
+    font-size: 60px;
+    font-weight: 900;   
+    padding-left: 2rem;
+
+
+}
+
+
+
+.c{
+    background-color: white;
+    width: 500px;
+    transform: skewY(-3deg);
+    /* padding-left: 1rem; */
+}
+
+.hero-text p{
+    padding-left: 2rem;
+    padding-bottom: 12px;
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: "Poppins";
+
+}
+.btns{
+    display: flex;
+    gap: 15px;
+}
+
+.shop{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 12px 23px;
+    font-size: 1.5rem;
+    border-radius:5px;
+    margin-left: 1rem;
+}
+
+.more{
+    border: none;
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    font-size: 1.5rem;
+    padding: 12px 23px;
+    border-radius:5px;
+
+
+}
+
+.icons{
+    width: 43px;
+    height: 43px;
+}
+
+.icons img{
+    max-width: 100%;
+}
+
+.features{
+    background-color: #4DFCDC;
+    margin-top: 1.5rem;
+}
+
+.row{
+    display: flex;
+    justify-content: space-around;
+    padding-block: 1.5rem;
+}
+
+.col{
+ 
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.arrival{
+    padding: 2rem 3.5rem;
+}
+.arrival-text{
+    position: relative;
+    width: fit-content;
+}
+
+
+.vector{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.three-row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    padding-top: 2.5rem;
+}
+
+.hoodie{
+    width: 100%;
+}
+
+.arrow{
+    width: 37px;
+}
+
+.hoodie-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payday{
+    display: grid;
+    grid-template-columns:repeat(2,1fr) ;
+    padding-top: 2rem; 
+    height: 100%;
+
+}
+
+.paygirl{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pay-text{
+    background-color: #4DFCDC;
+    padding:6rem  3rem;
+    width: 100%;
+    
+}
+.pay-text .p{
+    background-color: white;
+    width: 370px;
+    padding-left: 10px;
+    transform: skewY(-3deg);
+
+}
+
+.pay-text .p, .pay-text .sale{
+    font-size: 5rem;
+    font-weight: 700;
+    font-family: "Poppins";
+}
+
+.pay-text p{
+    width: 350px;
+    font-weight:500;
+    font-family: "Poppins";
+    /* padding-top: .5rem; */
+
+}
+
+
+.date{
+    margin-top: 1.5rem;
+
+}
+
+.date h4{
+    font-size: 1rem;
+    font-family: "Poppins";
+    font-weight: bold;
+}
+
+.btn-shop{
+    margin-top: 2rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+.favorite{
+    margin:2rem;
+    padding: 2rem;
+}
+
+.favorite h1{
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 3rem;
+
+}
+
+
+.fav-img{
+    display: flex;
+    gap: 30px;
+}
+
+.insta, .all{
+    width: 100%;
+}
+
+
+.join{
+    padding: 5rem 6rem;
+    background-color: #4DFCDC;
+}
+
+.join-text{
+  
+    text-align: center;
+}
+
+.join-text h1{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.join-text p{
+    font-size: 18px;
+    font-family: "Poppins";
+    color: black;
+}
+
+
+.btn-box{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    background-color: white;
+    padding: 0.5rem;
+      width: 100%; 
+     max-width: 379px;
+     margin-inline: auto;
+     border-radius: 5px;
+
+    margin-top: 30px;
+}
+
+
+.email{
+    border: none;
+    padding-left: 15px;
+    outline: none;
+    width: 100%;
+}
+
+.email::placeholder{
+    font-size: 14px;
+    color: #242323;
+    font-family: "Poppins";
+}
+
+.send{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    
+}
+
+.footer-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer p{
+    color: white;
+    width: 250px;
+    font-size: 1rem;
+    font-family: "Poppins";
+}
+
+.ft ul li a{
+    color: white;
+    font-size: 14px;
+    font-family: "Poppins";
+    font-weight: normal;
+}
+
+.ft ul li{
+    padding: 8px;
+}
+
+.ft-box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px; 
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; 
+    height: 50px;
+    border-radius: 22%; 
+    transition: background-color 0.3s; 
+}
+
+.icon img {
+    height: 20px;
+    
+}
+
+
+.facebook {
+    background-color:#4DFCDC;
+}
+
+.instagram {
+    background-color:#4DFCDC;
+}
+
+.twitter {
+    background-color:#4DFCDC;
+}
+
+.linkedin{
+    background-color:#4DFCDC;
+
+}
+
+
+
+
