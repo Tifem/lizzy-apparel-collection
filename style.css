@@ -115,7 +115,6 @@ a{
     background-color: white;
     width: 500px;
     transform: skewY(-3deg);
-    /* padding-left: 1rem; */
 }
 
 .hero-text p{
@@ -168,8 +167,8 @@ a{
 }
 
 .row{
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     padding-block: 1.5rem;
 }
 
@@ -177,15 +176,16 @@ a{
  
     display: flex;
     gap: 10px;
-    padding: 1rem;
-    /* justify-content: center; */
+    padding: 1rem 2.5rem;
     align-items: center;
 }
 
 .arrival{
     padding: 2rem 3.5rem;
 }
-.arrival-text{
+
+
+.arrival-text, .favorite-text{
     position: relative;
     width: fit-content;
 }
@@ -257,7 +257,6 @@ a{
     width: 350px;
     font-weight:500;
     font-family: "Poppins";
-    /* padding-top: .5rem; */
 
 }
 
@@ -282,17 +281,32 @@ a{
     padding: 1rem 1.5rem;
     border-radius: 5px;
 }
+
+
 .favorite{
     margin:2rem;
     padding: 2rem;
 }
 
-.favorite h1{
+
+.favorite-text{
+    position: relative;
+}
+
+
+.favorite-text h1{
     font-family: "Poppins";
     font-size: 2rem;
     font-weight: bold;
     padding-bottom: 3rem;
 
+}
+
+.fav{
+    position: absolute;
+    top: 30px;
+    right: 0;
+    z-index: -1;
 }
 
 
@@ -444,6 +458,130 @@ a{
 
 }
 
+@media(max-width:650px){
+    .list{
+        display: none;
+    }
 
+    .a{
+        width: 200px;
+        text-align: left;
+        font-size: 35px;
+        padding-left: 1rem;  
+     
+    }
+    
+    .b , .c, .d{
+        font-size: 35px;
+        padding-left: 1rem;
+    }
+
+    
+    .c{
+        background-color: white;
+        width: 400px;
+       
+    }
+
+    .hero-text p{
+        font-size: 12px;
+        padding-left: 1rem;
+    
+    }
+    
+    
+    .shop{
+        padding: 8px 15px;
+        font-size: 1rem;
+        margin-left: .5rem;
+    }
+
+    .more{
+        font-size: 1rem;
+        padding: 8px 15px;
+    
+    
+    }
+
+    .row{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-block: 1.5rem;
+    }
+
+
+    .three-row{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 2rem;
+    }
+
+    .payday{
+        display: grid;
+        grid-template-columns:1fr ;
+        padding-top: 1rem;     
+    }
+
+    .pay-text{
+        padding:3rem;
+        
+    }
+    .pay-text .p{
+        width: 250px;
+        padding-left: 10px;
+    
+    }
+    
+    .pay-text .p, .pay-text .sale{
+        font-size: 3.25rem;
+    }
+    
+    .favorite{
+        margin:1rem;
+        padding: 1rem;
+    }
+    
+    .fav-img{
+        display: block;
+    }
+
+    .favorite-text h1{
+       
+        padding-bottom: 2rem;
+    
+    }
+
+    .join{
+        padding: 2.5rem;
+    }
+
+    .join-text h1{
+        font-size: 1.5rem;
+
+    }
+
+    .join-text p{
+        font-size: 1rem;
+       
+    }
+
+    .footer{
+        display: block;
+        padding: 3rem;
+        
+    }
+
+    .ft ul li a{
+        font-size: 13px;
+      
+    }
+
+    /* .ft-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 30px;
+    } */
+}
 
 
