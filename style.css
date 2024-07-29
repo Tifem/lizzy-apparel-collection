@@ -65,6 +65,10 @@ a{
     display: none;
 }
 
+.close-menu{
+    display: none;
+}
+
 .hero{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -504,6 +508,10 @@ a{
         align-items: start;
         align-content: start;
         gap: 30px;
+    }
+
+    .close-menu{
+        display: block;
     }
 
     .list{
