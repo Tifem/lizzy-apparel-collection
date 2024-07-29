@@ -57,6 +57,14 @@ a{
     border-radius: 5px;
 }
 
+.mobile-sign-up {
+    display: none;
+}
+
+.menu-icon{
+    display: none;
+}
+
 .hero{
     display: grid;
     grid-template-columns: auto 1fr;
@@ -88,7 +96,6 @@ a{
     height: 100%;
     object-fit: cover;
 }
-
 
 
 .a{
@@ -224,6 +231,7 @@ a{
     grid-template-columns:repeat(2,1fr) ;
     padding-top: 2rem; 
     height: 100%;
+    max-width: 100vw;
 
 }
 
@@ -254,7 +262,7 @@ a{
 }
 
 .pay-text p{
-    width: 350px;
+    max-width: 350px;
     font-weight:500;
     font-family: "Poppins";
 
@@ -459,9 +467,65 @@ a{
 }
 
 @media(max-width:650px){
-    .list{
+    .nav{
+        padding: 1rem ;
+
+    }
+
+    .hero{
+        margin-inline: 1rem;
+    }
+
+    .hero-img{
+        display: none;
+
+    }
+
+
+    .desktop-sign-up{
         display: none;
     }
+
+    .mobile-sign-up{
+        display: initial;
+    }
+    
+    .menu{
+        background-color: #fff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 1.5rem;
+        height: 100vh;
+        width: 70vw;
+        z-index: 1000;
+        display: grid;
+        position: absolute;
+        top: 0;
+        right: 0;
+        align-items: start;
+        align-content: start;
+        gap: 30px;
+    }
+
+    .list{
+        display: grid;
+        align-items: start;
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+
+    .menu-icon{
+        display: block;
+        height: 30px;
+    }
+
+    .close-menu{
+        height: 30px;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
 
     .a{
         width: 200px;
@@ -478,8 +542,7 @@ a{
 
     
     .c{
-        background-color: white;
-        width: 400px;
+        width: 270px;
        
     }
 
@@ -505,30 +568,32 @@ a{
 
     .row{
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns:1fr;
         padding-block: 1.5rem;
     }
 
 
     .three-row{
-        display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
         padding-top: 2rem;
     }
 
+    .arrival{
+        padding: 1rem;
+    }
+
     .payday{
-        display: grid;
         grid-template-columns:1fr ;
         padding-top: 1rem;     
     }
+
 
     .pay-text{
         padding:3rem;
         
     }
     .pay-text .p{
-        width: 250px;
+        max-width: 250px;
         padding-left: 10px;
     
     }
@@ -577,11 +642,11 @@ a{
       
     }
 
-    /* .ft-box{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        gap: 30px;
-    } */
+    .ft-box{
+        grid-template-columns:1fr;
+        gap: 2rem;
+        margin-top: 20px;
+    }
 }
 
 
